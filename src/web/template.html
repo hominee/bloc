@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bloc Template</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css" />
+	<style>
+		.aside-buttons {
+			position: fixed;
+			width: 23%;
+			padding: 3% 3% 3%;
+			float: left;
+			background-color: lightgray;
+			display: block;
+		}
+		.main-content {
+			width: 75%;
+			padding-left: 15px;
+			padding-right: 30px;
+			display: block;
+			float: right;
+		}
+		.auto-line-break {
+			word-break: break-word;
+		}
+		.balance {
+			color: blue;
+		}
+		.no-padding {
+			padding: 0;
+		}
+		p > code {
+			font-size: 13px;
+			color: lightslategray;
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar" role="navigation" aria-label="main navigation">
+			<div class="navbar-brand">
+					<a class="navbar-item" href="#">
+					<h1 class="navbar-item is-size-3">Black Bloc</h1
+>
+					</a>
+					<a class="navbar-item" href="{href.clone()}">
+							<figure class="image is-rounded pr-3">
+									<img src="assets/rust.png" class="image"/>
+							</figure>
+					</a>
+			</div>
+			<div class="navbar-end">
+					<div class="navbar-item" >
+					<div class="field is-grouped">
+							<a  href="#">
+									<figure class="image is-rounded pr-3">
+											<img style="width:auto;" src="assets/rust.png" />
+									</figure>
+							</a>
+							<div class="navbar-item has-dropdown is-hoverable">
+							<a class="title is-5"  href="#">
+								Bruce Yuan
+							</a>
+							</div>
+					</div>
+					</div>
+			</div>
+	</nav>
+
+	<aside class="aside-buttons buttons">
+		<form action="">
+			<div class="field">
+				<label for="user-name">Create User</label>
+				<div class="control">
+					<input type="text" id="user-name" name="user-name" value="">
+					</div> 
+				<div class="control mt-1">
+					<!--<input type="submit" value="Create">-->
+					<button type="submit" class="button is-small is-outlined is-inverted">Create</button>
+				</div>
+			</div>
+		</form>
+		<hr class="doted">
+		
+		<p class="title is-3">Transfer</p>
+		<form action="">
+			<div class="field">
+				<label for="from-user">From</label>
+				<div class="control">
+					<input type="text" id="public-key-from" name="public-key-from" value="">
+				</div> 
+				<label for="to-user">To</label>
+				<div class="control">
+					<input type="text" id="public-key-to" name="public-key-to" value="">
+				</div> 
+				<div class="control mt-1">
+					<button  type="submit" class="button is-small is-outlined is-inverted">Confirm</button>
+					<!--<input type="submit" value="Submit">-->
+				</div>
+			</div>
+		</form>
+	</aside>
+
+	<div class="main-content">
+		<div class="user-cards box columns">
+
+			<div class="column is-1">
+				<figure class="image is-64x64" >
+								<img style="width:100%;height:100%"  src="assets/rust.png" alt="user's avatar" />
+				</figure>
+			</div>
+
+			<div class="column" style="max-width:768px">
+				<div class="level " style="margin-bottom:0">
+					<div class="level-left">
+						<div class="level-item" id="owner-bruce-yuan">
+							<span >Bruce Yuan</span>
+						</div>
+					</div>
+					<div class="level-right">
+						<div class="level-item">
+						</div>
+						<span class="balance">100000.0</span>
+					</div>
+				</div>
+
+				<hr class="doted"/>
+
+				<div class="column no-padding" >
+					<p class="auto-line-break">Public Key:
+						<code>80983029802938092380809248309843098209joiajoijawi20uj0caoij02</code>
+					</p>
+					</div>
+
+				<div class="column no-padding" >
+					<p class="auto-line-break">Secret Key: 
+						<code>sojois80983029802938092380809248309843098209joiajoijawi20uj0caoij02sojois80983029802938092380809248309843098209joiajoijawi20uj0caoij02sojois80983029802938092380809248309843098209joiajoijawi20uj0caoij02sojois80983029802938092380809248309843098209joiajoijawi20uj0caoij02sojois80983029802938092380809248309843098209joiajoijawi20uj0caoij02</code>
+					</p>
+				</div>
+
+				<div class="column no-padding">
+					<table class="table is-fullwidth is-hoverable">
+						<thead>
+							<tr>
+								<th>From</th>
+								<th>To</th>
+								<th>Amount</th>
+								<th>Tips</th>
+							</tr>
+						</thead>
+						<tfoot>
+							<tr>
+								<th>From</th>
+								<th>To</th>
+								<th>Amount</th>
+								<th>Tips</th>
+							</tr>
+						</tfoot>
+						<tbody>
+							<tr>
+								<td><a href="#owner-MINT">MINT</a></td>
+								<td><a href="#owner-bruce-yuan">Bruce Yuan</a></td>
+								<td>100000.0</td>
+								<td>0.0</td>
+							</tr>
+							<tr>
+								<td><a href="#owner-bruce-yuan">Bruce Yuan</a></td>
+								<td><a href="owner-lele-montain">Lele Montain</a></td>
+								<td>300.0</td>
+								<td>10.0</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+.aside-buttons {
+	width: 25%;
+	padding: 2% 2% 2% 2%;
+	float: left;
+	background-color: lightgray;
+	display: block;
+}
+.main-content {
+	width: 75%;
+	padding-left: 15px;
+	padding-right: 30px;
+	display: block;
+	float: right;
+}
+.input {
+	width: 100%;
+	height: 30px;
+	padding: 2%;
+	border-radius: 10px;
+	align-items: center;
+}
+.auto-line-break {
+	word-break: break-word;
+}
+.balance {
+	color: blue;
+}
+.no-padding {
+	padding: 0;
+}
+p > code {
+	font-size: 13px;
+	color: lightslategray;
+}
+.no-display {
+	display: none;
+}
+.space-between {
+	display: flex;
+	justify-content: space-between;
+}
+.full-cover {
+	width: 100%;
+	height: 100%;
+}
+.text-center {
+	text-align: center;
+}
+.aside-border {
+	border-radius: 0 50px 60px 0;
+}
+.card-border {
+  border-radius:20px;
+  border-with:3px;
+  border-color:darkgrey;
+  border-style:solid;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  /*border-bottom: 1px black; [> If you want dots under the hoverable text <]*/
+}
+
