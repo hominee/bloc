@@ -1,6 +1,6 @@
 # Intro
 
-bloc is one of **bare-bone** blockchain demo written by [Rust](https://rust-lang.org), [Yew](https://yew.rs) during my learning BlockChain, about years ago.
+bloc is one of **bare-bone** blockchain demo written by [Rust](https://rust-lang.org), Web-Assmebly during my learning BlockChain, about years ago.
 
 ![screen shot](./Black-Bloc.png)
 
